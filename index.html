@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nook & Nest Design Studio</title>
+    <link rel="stylesheet" href="./style.css">
+
+
+    <!-- bootstrap cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+
+    <!-- tailwind script file -->
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Slabo+27px&family=Tapestry&family=Tienne:wght@400;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- font awsome cdn link -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Animate style -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- AOS -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <div>
+        <div class="container-fluid">
+            <!-- navbar -->
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img class="w-10 cursor-pointer" src="./images/logoimg.png"
+                            alt="no image"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                        <ul class="navbar-nav fw-bold me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#home">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#company">COMPANY</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    WHAT WE DO
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#CustInteriors">CUSTOMIZED INTERIORS</a>
+                                        <hr>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#DsgnBuld">DESIGN AND BUILD</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    PRODUCTS
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#kitchen">KITCHEN</a>
+                                        <hr>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#bedroom">BEDROOM</a>
+                                        <hr>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#Dinning">DINING ROOM</a>
+                                        <hr>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#Living">LIVING ROOM</a>
+                                        <hr>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#Kidroom">KIDS ROOM</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Gallery">GALLERY</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Contact">CONTACTS</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-dark" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Home -->
+
+            <section id="home">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="./images/Homeimg1.jpg" alt="First slide">
+                            <div class="carousel-caption fs-2 fw-bold d-none d-sm-block">
+                                <span>INTERIORS INSPIRED BY INNOVATION.</span>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./images/Homeimg2.jpg" alt="Second slide">
+                            <div class="carousel-caption fs-2 fw-bold d-none d-md-block">
+                                <span>You Dream. We Design.</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./images/Homeimg3.jpg" alt="Third slide">
+                            <div class="carousel-caption fs-1 fw-bold d-none d-md-block">
+                                <h5>You Dream. We Design.</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Company -->
+
+            <section id="company">
+                <div class="container-fluid mt-5" id="Companydet">
+                    <div id="headcomp" class="container">
+
+                        <div class="row justify-content-center bg-light">
+                            <h1 class="section-title text-center mt-5 fw-bold">WELCOME TO NOOK & NEST DESIGN STUDIO</h1>
+                            <h6 class="text-center">#BringHappinessInside &reg;</h6>
+                            <div class="container text-justify p-3 mt-4 infobox">
+                                <p>Nook & Nest Design Studio is the largest and most reliable home interior design
+                                    company
+                                    in
+                                    Mumbai, Hyderabad, Pune, Bangalore, Kerala, Mysore, Chennai, Nagercoil, Coimbatore,
+                                    Madurai
+                                    & Mangalore with more than 1300 employees. It is one of the prominent names in 100%
+                                    customized furniture and modular kitchens. Here, the manufacturer deals directly
+                                    with
+                                    clients, avoiding all intermediaries and thus reducing costs. Durability of
+                                    products,
+                                    systematic procedure for work and teamwork of highly efficient people make this firm
+                                    the
+                                    best in the industry. Contemporary designs and creative space plans by professionals
+                                    ensure
+                                    elegant home furnishing. This way, the company is able to meet the expectations of
+                                    clients
+                                    since its inception in the year 2004.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="contcomp">
+
+                        <div class="row m-10">
+                            <div class="col-lg-6 mt-3">
+                                <img src="./images/compimg.jpg" alt="no images">
+                            </div>
+                            <div class="col-lg-6">
+                                <h3 class="mt-sm-5 mt-lg-0 fw-bold fs-3">Best Interior Design Company in India</h3>
+                                <p class="mt-5 text-justify">Nook & Nest Design Studio started with commercial space and
+                                    residential
+                                    furnishing in 2004 at Kochi, as its main office. Subsequently, for the convenience
+                                    of
+                                    people
+                                    from distant places, we opened new showrooms in Kottayam, Trivandrum, and Calicut.
+                                    More
+                                    branches are now open at Thrissur, Kollam, Bangalore, Chennai, Hyderabad, Pune, Navi
+                                    Mumbai,
+                                    Coimbatore & Mangalore. To cater the increasing demand for quality Interiors, Nook &
+                                    Nest
+                                    Studio Kochi has started 3 more showrooms in Edappally, Vyttila, and Kakkanad. As
+                                    part
+                                    of
+                                    the expansion, over the years, we also started new showrooms in other states such as
+                                    Mumbai,
+                                    Hyderabad, Pune, Bengaluru, Mysore, Mangalore, Chennai, Coimbatore, Madurai and
+                                    Nagercoil to
+                                    expand our reach and provide our services to a wider audience. Currently, we serve
+                                    clients
+                                    through 30 showrooms/branches. Our marketing office in UAE further enables us to
+                                    assist
+                                    NRI
+                                    clients who are looking to furnish their flats or houses in India, ensuring that
+                                    they
+                                    receive the same quality interiors and services as our local customers.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="ContComp1" class="container-fluid bg-light mt-10">
+                        <div class="row m-10 p-5">
+
+                            <div class="col-lg-6">
+                                <h3 class="mt-sm-5 mt-lg-0 fw-bold fs-3">Easily Accessible Branch Locations</h3>
+                                <p class="mt-5 text-justify">At Nook & Nest Design Studio, we take pride in our
+                                    commitment
+                                    to providing exceptional service to our clients. With 25 experience centres
+                                    strategically located across India, we ensure that our services are easily
+                                    accessible to
+                                    customers from various regions. We understand the importance of accessibility in
+                                    delivering a seamless customer experience, and our extensive connected experience
+                                    centres enable us to efficiently serve clients across the country. You can trust us
+                                    to
+                                    transform your spaces into stunning, personalised interiors that reflect your unique
+                                    style and vision.</p>
+                                <br>
+                                <a class="bg-purple-400 py-2 px-3 rounded-2xl font-medium  mr-4 hover:bg-transparent hover:border hover:border-purple-300 duration-300"
+                                    href="">View Our Branch Locations</a>
+
+                            </div>
+                            <div class="col-lg-6 mt-3">
+                                <img src="./images/Compimg2.jpg" alt="no images">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- What we do -->
+            <!-- Customized Interiors -->
+
+            <section id="CustInteriors">
+                <div class="container-fluid mt-5" id="custint">
+                    <div id="headCust" class="container py-3">
+
+                        <div class="row justify-content-center">
+                            <h1 class="section-title text-center mt-5 fw-bold">Custom-Made Home Interiors</h1>
+
+                            <div class="container text-justify p-3 mt-4 infobox">
+                                <p>“Made for you” may be an accurate phrase to express what we do in interiors. We have
+                                    been
+                                    designing and executing exquisite home interiors since 2004. Custom-made interior is
+                                    the
+                                    best way to ensure that modular kitchen, wardrobes and other furniture perfectly
+                                    fits to
+                                    the spaces. Our interior designers possess impeccable ability to understand client’s
+                                    requirements and provide the best space planning for a house or flat. NOOK & NEST’s
+                                    fully equipped modular kitchen is distinct with its unique design and most modern
+                                    features. We plan and make contemporary style furniture for bedrooms, living and
+                                    dining
+                                    rooms as well. Innovative ideas, creative designs and ability to deliver the
+                                    promises on
+                                    time enables us to retain the leadership in this field.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ContComp1" class="container-fluid mt-10">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="cusimg1">
+                                    <img class="img-fluid " src="./images/custimg1.jpg" 
+                                        style="height: 300px; width: 100%; object-fit: cover;" alt="no images">
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="cusimg2 mt-4">
+                                            <img class="img-fluid" src="./images/custimg3.jpg" alt="no images">
+                                        </div>
+                                        <div class="row">
+                                            <div class="col cusimg3 mt-4">
+                                                <img class="img-fluid" src="./images/custimg4.jpg" alt="no images">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 mt-4 cusimg4">
+                                        <img class="img-fluid " src="./images/custmimg2.jpg"
+                                            style="height: 520px; width: 100%; object-fit: cover;" alt="no images">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-4 cusimg5">
+                                <div class="mt-sm-4 mt-lg-0">
+                                    <img class="img-fluid" src="./images/custimg2.jpg" alt="no images">
+                                </div>
+                                <div class="row">
+                                    <div class="col mt-4">
+                                        <img class="img-fluid" src="./images/custimg6.jpg"
+                                            style="height: 250px; width: 100%; object-fit: cover;" alt="no images">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ContComp2" class="container mt-10 py-3 bg-light">
+                        <div class="row m-10">
+                            <div class="col-lg-6 mt-10">
+                                <img src="./images/custimg8.jpg" alt="no images">
+                            </div>
+                            <div class="col-lg-6">
+                                <h3 class="mt-sm-5 mt-lg-4 fw-bold fs-3">Why Customized Home Interiors?</h3>
+                                <ul class="list-disc list-inside mt-4 text-justify">
+                                    <li class="mb-2">Creating rather than accepting what is available ensures complete
+                                        satisfaction of users.</li>
+                                    <li class="mb-2">Customize furniture as per design, measuring actual space at site.
+                                    </li>
+                                    <li class="mb-2">Interaction between designer and client at each phase till
+                                        finalization
+                                        ensures scope for improvement to meet the objectives of customized home
+                                        interiors.
+                                    </li>
+                                    <li class="mb-2">Clients get to select accessories and fittings and create cabinets
+                                        accordingly.</li>
+                                    <li class="mb-2">Enhance storage capabilities and make the most of difficult spaces.
+                                    </li>
+                                    <li class="mb-2">Plan and modify interior works as per budget. Clients get to study
+                                        the
+                                        estimate and drawings and alter plans during the design stage as per budget.
+                                    </li>
+                                    <li class="mb-2">Enables you to have furniture with a suitable color that blends
+                                        with
+                                        your color scheme.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+            <!-- Design and Build -->
+
+            <section id="DsgnBuld">
+                <div class="container-fluid mt-5" id="design">
+                    <div id="headDsgn" class="container py-3">
+
+                        <div class="row justify-content-center">
+                            <h1 class="section-title text-center mt-5 fw-bold">Design ‘N’ Build</h1>
+
+                            <div class="container text-justify p-5 mt-4 infobox">
+                                <p>Complete customization by qualified and experienced interior designers assigned to
+                                    the
+                                    client is the system of D’LIFE. We provide complete solutions to your interiors
+                                    including sharp and focused spatial planning, interior design, furnishings, and
+                                    decoration. First we make the design in discussion with the client, get approval and
+                                    then build it exactly as per plan. Each branch has expert designers, working closely
+                                    with clients in cooperation with business development managers, factory and project
+                                    installation team.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Dsgn">
+
+                    <div class="row m-10 bg-light">
+                        <div class="col-lg-6 mt-3">
+                            <img src="./images/designimg1.jpg" alt="no images">
+                        </div>
+                        <div class="col-lg-6">
+                            <h3 class="mt-sm-5 mt-lg-3 fw-bold fs-3">Design</h3>
+                            <ul class="list-disc list-inside mt-4 text-justify">
+                                <li class="mb-2">Project is allocated to a designer with clear instructions from the
+                                    business development manager who initially deals with the client.</li>
+                                <li class="mb-2">Study the requirements in detail: In discussion with the client, with
+                                    the
+                                    help of floor plan, designer understands the space and requirements carefully.</li>
+                                <li class="mb-2">Actual measurements and drawing: Designer visits the house/ flat and
+                                    takes
+                                    actual measurement of the space as per the requirements discussed.</li>
+                                <li class="mb-2">Detailed drawing is prepared and sent to the client.</li>
+                                <li class="mb-2">Finalization of drawings in mutual agreement. Drawings sent to the
+                                    factory
+                                    for production.</li>
+                            </ul>
+                            <br>
+                            <a class="bg-purple-400 py-2 px-3 rounded-2xl font-medium  mr-4 hover:bg-transparent hover:border hover:border-purple-200 duration-300"
+                                href="">Meet our Interior Designer</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="Dsgn1">
+
+                    <div class="row m-10 bg-light">
+
+                        <div class="col-lg-6">
+                            <h3 class="mt-sm-5 mt-lg-3 fw-bold fs-3">Execution</h3>
+                            <ul class="list-disc list-inside mt-4 text-justify">
+                                <li class="mb-3">Project implementation is planned well in advance by the team head. He
+                                    arranges for the installation immediately upon delivery of products at site.</li>
+                                <li class="mb-3">We have our own logistics team to provide easy and safe transportation
+                                    for
+                                    furnishings to site.</li>
+                                <li class="mb-3">Number of days expected for installation as per the volume of work is
+                                    informed to client.</li>
+
+                            </ul>
+
+                        </div>
+                        <div class="col-lg-6 mt-3">
+                            <img src="./images/designimg2.avif" alt="no images">
+                        </div>
+                    </div>
+
+                </div>
+                <div id="Dsgn2">
+
+                    <div class="row m-10 bg-light">
+                        <div class="col-lg-6 mt-3">
+                            <img src="./images/designimg3.jpg" alt="no images">
+                        </div>
+                        <div class="col-lg-6">
+                            <h3 class="mt-sm-5 mt-lg-3 fw-bold fs-3">Project Handover</h3>
+                            <ul class="list-disc list-inside mt-4 text-justify">
+                                <li class="mb-2">We are totally committed to on-time & accurate completion of every
+                                    project.
+                                </li>
+                                <li class="mb-2">Our team ensures no debris, noise or disturbance is caused and also
+                                    guarantees the safety or welfare of the surrounding neighbors.</li>
+                                <li class="mb-2">Our team will leave your site only after getting the satisfaction
+                                    report.
+                                </li>
+                            </ul>
+                            <br>
+                            <a class="bg-purple-400 py-2 px-3 rounded-2xl font-medium  mr-4 hover:bg-transparent hover:border hover:border-purple-200 duration-300"
+                                href="">Deal Directly with the Company</a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Products -->
+            <!-- Kitchen -->
+
+            <section id="kitchen">
+                <div id="headkitchen" class="container py-3">
+
+                    <div class="row justify-content-center">
+                        <h1 class="section-title text-center mt-5 fw-bold">Custom-made Modular Kitchen</h1>
+
+                        <div class="container text-justify p-5 mt-4 infobox">
+                            <p>We offer modular kitchen designs for flat (apartment), or villas anywhere in India as per
+                                client’s requirements. Customized modular kitchen designs suits the client's lifestyle
+                                and
+                                fits perfectly in the space. An experienced interior designer from our company to visits
+                                the
+                                site, takes measurements and understands requirements through several discussions. Our
+                                designer incorporates client’s requirements into suitable design as per shape and size
+                                of
+                                the kitchen. Once the client is completely satisfied with the drawings and
+                                specifications,
+                                the company produces a modular kitchen from its own factory. A team of experienced
+                                technicians perform installation on site with perfect coordination. This professional
+                                interior design company can execute a work within 35-40 days of finalization of
+                                drawings.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid d-flex  p-5">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <img src="images/kitchen.jpg" style="height: 200px; width: 100%; object-fit: cover;" alt="">
+                            <h4 class="text-center fs-5 fw-bold mt-4">Island Kitchen</h4>
+                        </div>
+                        <div class="col-lg-3">
+                            <img src="images/kitchen2.jpg" style="height: 200px; width: 100%; object-fit: cover;"
+                                alt="">
+                            <h4 class="text-center fs-5 fw-bold mt-4">L Shape Kitchen</h4>
+                        </div>
+                        <div class="col-lg-3">
+                            <img src="images/kitchen3.jpg" style="height: 200px; width: 100%; object-fit: cover;"
+                                alt="">
+                            <h4 class="text-center fs-5 fw-bold mt-4">Parallel Kitchen</h4>
+                        </div>
+                        <div class="col-lg-3">
+                            <img src="images/kitchen4.jpg" style="height: 200px; width: 100%; object-fit: cover;"
+                                alt="">
+                            <h4 class="text-center fs-5 fw-bold mt-4">U Shape Kitchen</h4>
+                        </div>
+                    </div>
+            </section>
+
+            <!-- Bedroom -->
+
+            <section id="bedroom">
+                <div id="headbedroom" class="container py-3">
+
+                    <div class="row justify-content-center">
+                        <h1 class="section-title text-center mt-5 fw-bold">Custom-made Bedroom</h1>
+
+                        <div class="container text-justify p-5 mt-4 infobox">
+                            <p>A large portion of anyone’s life is spent in a bedroom, as the best place to relieve
+                                anxieties, worries, and hurries. Family feels secure and free in this room and thus it
+                                needs
+                                the best ambiance, facilities, and provisions. Bedroom furniture like cot, side tables,
+                                wardrobes and dressing table mostly occupies almost all the space in a normal bedroom.
+                                In
+                                order to maintain bedroom excellence, it is important to choose bedroom furniture in
+                                matches
+                                the style with your bedroom interior design. This is where you can use the expertise of
+                                top
+                                interior designers.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid d-flex items-center justify-center  p-5">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <img src="images/bedroom1.jpg" style="height: 300px; width: 100%; object-fit: cover;"
+                                alt="">
+                            <h4 class="text-center fs-5 fw-bold mt-4">Bed</h4>
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="images/bedroom2.jpg" style="height: 300px; width: 100%; object-fit: cover;"
+                                alt="">
+                            <h4 class="text-center fs-5 fw-bold mt-4">Dressing Unit</h4>
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="images/bedroom3.jpg" style="height: 300px; width: 100%; object-fit: cover;"
+                                alt="">
+                            <h4 class="text-center fs-5 fw-bold mt-4">Wardrobe</h4>
+                        </div>
+
+                    </div>
+            </section>
+
+            <!-- Dining Room -->
+
+            <section id="Dinning">
+                <div id="headdining" class="container py-3">
+
+                    <div class="row justify-content-center">
+                        <h1 class="section-title text-center mt-5 fw-bold">Custom-Made Dining Room</h1>
+
+                        <div class="container text-justify p-5 mt-4 infobox">
+                            <p>A suitable bar counter can be designed conveniently within the space available or the
+                                wash
+                                counter can be augmented by adding storage in matching colour themes. Take a look at
+                                some of
+                                our products for your dining room in this page to customize and include in your home
+                                interiors package. We have an endless variety of dining room interior design decors to
+                                give
+                                your dining room the makeover it deserves with gorgeous and beautiful updates for walls,
+                                lighting, and exclusive furniture.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid d-flex items-center justify-center p-5">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <img src="images/dining1.jpg" style="height: 200px; width: 100%; object-fit: cover;" alt="">
+                            <h4 class="text-center fs-5 fw-bold mt-4">Bar Counter</h4>
+                        </div>
+                        <div class="col-lg-3">
+                            <img src="images/dining2.jpg" style="height: 200px; width: 100%; object-fit: cover;" alt="">
+                            <h4 class="text-center fs-5 fw-bold mt-4">Crockery Shelf</h4>
+                        </div>
+                        <div class="col-lg-3">
+                            <img src="images/dining3.jpg" style="height: 200px; width: 100%; object-fit: cover;" alt="">
+                            <h4 class="text-center fs-5 fw-bold mt-4">Dining Table</h4>
+                        </div>
+                        <div class="col-lg-3">
+                            <img src="images/dining5.jpg" style="height: 200px; width: 100%; object-fit: cover;" alt="">
+                            <h4 class="text-center fs-5 fw-bold mt-4">Wash</h4>
+                        </div>
+                    </div>
+            </section>
+
+            <!-- Living Room -->
+
+            <section id="Living">
+                <div id="headliving" class="container py-3">
+
+                    <div class="row justify-content-center">
+                        <h1 class="section-title text-center mt-5 fw-bold">Custom-Made Living Room</h1>
+
+                        <div class="container text-justify p-5 mt-4 infobox">
+                            <p>We can help you to bring life into your living room. You may have a clear idea about
+                                living
+                                room decor, and may even know what needs to be done to make the living room interior
+                                design
+                                more attractive and convenient. Our top interior designers in the showroom will help you
+                                to
+                                create furniture that matches your style and requirements. We can provide custom made
+                                LCD TV
+                                Unit, sofa set, center table, living-dining partition etc. matching the overall theme of
+                                the
+                                house interiors. Contact our nearest showroom to view a wide range of living room
+                                furniture
+                                designs. Some of our best interior designers at the showroom will guide you to create
+                                suitable living room interior designs as per your choice.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid d-flex p-5">
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <img src="images/living1.jpg" style="height: 200px; width: 100%; object-fit: cover;" alt="">
+                            <h4 class="text-center fs-5 fw-bold mt-4">Bookshelves</h4>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="images/living2.jpg" style="height: 200px; width: 100%; object-fit: cover;" alt="">
+                            <h4 class="text-center fs-5 fw-bold mt-4">Center Table</h4>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="images/living3.jpg" style="height: 200px; width: 100%; object-fit: cover;" alt="">
+                            <h4 class="text-center fs-5 fw-bold mt-4">Sofas</h4>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="images/living4.jpg" style="height: 200px; width: 100%; object-fit: cover;" alt="">
+                            <h4 class="text-center fs-5 fw-bold mt-4">TV Display Unit</h4>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="images/living5.jpg" style="height: 200px; width: 100%; object-fit: cover;" alt="">
+                            <h4 class="text-center fs-5 fw-bold mt-4">Living-Dining Partition</h4>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="images/living6.jpg" style="height: 200px; width: 100%; object-fit: cover;" alt="">
+                            <h4 class="text-center fs-5 fw-bold mt-4">Shoe Rack</h4>
+                        </div>
+                    </div>
+            </section>
+
+            <!-- Kids Room -->
+
+            <section id="Kidroom">
+                <div id="headkidroom" class="container py-3">
+
+                    <div class="row justify-content-center">
+                        <h1 class="section-title text-center mt-5 fw-bold">Custom-Made Kids Room</h1>
+
+                        <div class="container text-justify p-5 mt-4 infobox">
+                            <p>Most important people of any house – kids, deserve the best place to sleep, play, and
+                                grow.
+                                The Colour scheme of a kid’s room, furniture, and other provisions make it attractive.
+                                Cots,
+                                Wardrobe-Cum- Study Unit, Stand-alone Study unit, etc. can be made as per client’s
+                                choice.
+                                Wallpapers and decorative paints play a pivotal role in the transformation of the
+                                children’s
+                                rooms. As part of home furnishing, the client can just ask the designer to provide the
+                                best
+                                suitable options. Below are just some samples of children’s bedroom furniture.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid d-flex  items-center justify-center p-5">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <img src="images/kids1..jpg" style="height: 300px; width: 100%; object-fit: cover;" alt="">
+                            <h4 class="text-center fs-5 fw-bold mt-4">Bed</h4>
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="images/kids2.jpg" style="height: 300px; width: 100%; object-fit: cover;" alt="">
+                            <h4 class="text-center fs-5 fw-bold mt-4">Study Unit</h4>
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="images/kids3.jpg" style="height: 300px; width: 100%; object-fit: cover;" alt="">
+                            <h4 class="text-center fs-5 fw-bold mt-4">Wardrobe Cum Study Table</h4>
+                        </div>
+
+                    </div>
+            </section>
+
+            <!-- Gallery -->
+
+            <section id="Gallery">
+                <div class="container mt-5">
+                    <div id="headGallery" class="container py-3">
+
+                        <div class="row justify-content-center">
+                            <h1 class="section-title text-center mt-5 fw-bold">Interior Gallery</h1>
+                        </div>
+                    </div>
+                    <div id="imgGallery" class="container mt-10">
+                        <div class="row">
+                            <div class="col-lg-3 ">
+                                <img src="images/gallery1.jpg" style="height: 200px; width: 100%; object-fit: cover;"
+                                    alt="">
+                            </div>
+                            <div class="col-lg-3">
+                                <img src="images/gallery2.jpg" style="height: 200px; width: 100%; object-fit: cover;"
+                                    alt="">
+                            </div>
+                            <div class="col-lg-3">
+                                <img src="images/gallery3.jpg" style="height: 200px; width: 100%; object-fit: cover;"
+                                    alt="">
+                            </div>
+                            <div class="col-lg-3">
+                                <img src="images/gallery4.jpg" style="height: 200px; width: 100%; object-fit: cover;"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-lg-3">
+                                <img src="images/gallery13.jpg" style="height: 200px; width: 100%; object-fit: cover;"
+                                    alt="">
+                            </div>
+                            <div class="col-lg-3">
+                                <img src="images/gallery14.jpg" style="height: 200px; width: 100%; object-fit: cover;"
+                                    alt="">
+                            </div>
+                            <div class="col-lg-3">
+                                <img src="images/gallery15.jpg" style="height: 200px; width: 100%; object-fit: cover;"
+                                    alt="">
+                            </div>
+                            <div class="col-lg-3">
+                                <img src="images/gallery16.jpg" style="height: 200px; width: 100%; object-fit: cover;"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-lg-3">
+                                <img src="images/gallery5.jpg" style="height: 200px; width: 100%; object-fit: cover;"
+                                    alt="">
+                            </div>
+                            <div class="col-lg-3">
+                                <img src="images/gallery6.jpg" style="height: 200px; width: 100%; object-fit: cover;"
+                                    alt="">
+                            </div>
+                            <div class="col-lg-3">
+                                <img src="images/gallery7.jpg" style="height: 200px; width: 100%; object-fit: cover;"
+                                    alt="">
+                            </div>
+                            <div class="col-lg-3">
+                                <img src="images/gallery8.jpg" style="height: 200px; width: 100%; object-fit: cover;"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="row mt-4 mb-5">
+                            <div class="col-lg-3">
+                                <img src="images/gallery9.jpg" style="height: 200px; width: 100%; object-fit: cover;"
+                                    alt="">
+                            </div>
+                            <div class="col-lg-3">
+                                <img src="images/gallery10.jpg" style="height: 200px; width: 100%; object-fit: cover;"
+                                    alt="">
+                            </div>
+                            <div class="col-lg-3">
+                                <img src="images/gallery11.jpg" style="height: 200px; width: 100%; object-fit: cover;"
+                                    alt="">
+                            </div>
+                            <div class="col-lg-3">
+                                <img src="images/gallery12.jpg" style="height: 200px; width: 100%; object-fit: cover;"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contacts -->
+
+            <section id="Contact">
+                <div id="headcontact" class="container py-3">
+
+                    <div class="row justify-content-center">
+                        <h1 class="section-title text-center mt-5 fw-bold">Get Touch with Us</h1>
+
+                        <div class="container text-center p-5 infobox">
+                            <p>If you would like to get in contact with the Interior, you have a number of options you
+                                can
+                                call or mail to below</p>
+                            <p>option, our team will support you as soon as possible.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container mt-5 bg-light">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <img src="./images/Contactim1.jpg" style="height: 500px; width: 100%; object-fit: cover;"
+                                alt="">
+                        </div>
+                        <div class="col-lg-6 d-block mt-10">
+                            <form action="#" method="POST">
+
+                                <!-- Name Input -->
+                                <div class="mb-4">
+
+                                    <input type="text" id="name"
+                                        class="form-control p-3  rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 w-full"
+                                        placeholder="Your Name*" required>
+                                </div>
+
+                                <!-- Email Input -->
+                                <div class="mb-4">
+
+                                    <input type="email" id="email"
+                                        class="form-control p-3 border-2 border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 w-full"
+                                        placeholder="Your Email*" required>
+                                </div>
+
+                                <!-- Phone Input -->
+                                <div class="mb-4">
+
+                                    <input type="tel" id="phone"
+                                        class="form-control p-3 border-2 border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 w-full"
+                                        placeholder="Phone" required>
+                                </div>
+
+                                <!-- Message Textarea -->
+                                <div class="mb-4">
+
+                                    <textarea id="message"
+                                        class="form-control p-3 border-2 border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 w-full"
+                                        rows="4" placeholder="Your Message" required></textarea>
+                                </div>
+
+                                <!-- Submit Button -->
+                                <div class="text-center">
+                                    <button type="submit"
+                                        class="btn btn-primary  py-3 px-4 rounded-md shadow-md bg-purple-600 text-white hover:bg-purple-700 transition-colors">
+                                        Send Message
+                                    </button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="Contact1">
+                <div class="bg-dark mt-10">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <img src="./images/Contactimg.png" alt="">
+                        </div>
+                       <div class="col-4"></div>
+
+                        <div class="col-sm-3 text-center text-white mt-10">
+                            <h4 class="fw-bold">Quick Links</h4>
+                            <ul class="mt-4 items-center justify-center">
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#company">Company</a></li>
+                                <li><a href="#CustInteriors">Custom Made</a></li>
+                                <li><a href="#DsgnBuld">Design ‘N’ Build</a></li>
+                                <li><a href="#kitchen">Products</a></li>
+                                <li><a href="#Gallery">Gallery</a></li>
+                                <li><a href="#Contact">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+
+        <!-- Footer -->
+
+        <footer id="footer">
+            <div class="row bg-light-600">
+                <div class="col-lg-6 d-flex">
+                    <hr>
+                    <img class="w-10 cursor-pointer" src="./images/logo1.jpg" alt="no image">
+                    <p id="copyright">&copy;Copyright &copy; 2024 Nook & Nest Design Studio. All
+                        Rights
+                        Reserved.</p>
+                    <div class="icon upArrow">
+                        <a href="#home"><i class="fa-solid fa-arrow-up brands"></i></a>
+                        <a href=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-2"></div>
+                <div class="col-lg-4 d-flex ">
+                    <div class="icon">
+                        <img class="cursor-pointer icon" src="./images/facebook.png" style="height: 40px; width: 40px;"
+                            alt="">
+                    </div>
+                    <div class="icon">
+                        <img class="cursor-pointer brands" src="./images/instagram.png" style="height: 40px; width: 40px;"
+                            alt="">
+                    </div>
+                    <div class="icon">
+                        <img class="cursor-pointer brands" src="./images/pinterest.png" style="height: 40px; width: 40px;"
+                            alt="">
+                    </div>
+                    <div class="icon">
+                        <img class="cursor-pointer brands" src="./images/youtube.png" style="height: 40px; width: 40px;"
+                            alt="">
+                    </div>
+                    <div class="icon">
+                        <img class="cursor-pointer brands" src="./images/linkedin.png" style="height: 40px; width: 40px;"
+                            alt="">
+                    </div>
+                    <div class="icon">
+                        <img class="cursor-pointer brands" src="./images/whatsapp.png" style="height: 40px; width: 40px;"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+
+<!-- Bootstrap Script -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Aos script file -->
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</html>

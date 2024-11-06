@@ -1,0 +1,17 @@
+#Companydet{
+    margin-top: 20%;
+}
+.section-title{
+    font-size: 50px;
+    
+}
+.infobox{
+    text-align: justify;
+}
+#contcomp{
+    margin-top: 10%;
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right,rgb(67, 245, 67),rgb(3, 68, 3),rgb(21, 21, 224));
+}
+
